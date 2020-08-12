@@ -11,7 +11,9 @@ the "Use HTTPS" link so that it does.
 5. Open up a Git Bash, command window, or terminal window (will be called CLI,
 command line interface, in further instructions).
 6. Navigate, using the `cd` command, to a location where you would like to store
-your repositories for this course.
+your repositories for this course.  (If unfamiliar with using the `cd`
+command and making directories from the command line, please see the 
+"Directories" section below for more information.)
 7. Back on your CLI, type `git clone <URL>` where `<URL>` is the URL copied from
 above.  Note, do not include the `<>`.  Hit return.
 8. A new folder called `setup_verification` should have been created.  Move into
@@ -39,3 +41,33 @@ that is running.
 16. Deactivate your virtual environment by entering `deactivate`.
 
 
+## Directories
+#### Quick Start
+* Right after you open Git Bash, type `mkdir BME547_repos` to make a new folder
+for this class.
+* Move into this folder by typing `cd BME547_repos`
+
+For more details, keep reading.  Otherwise, go back to steps above.
+
+#### Home directory  
+
+
+When Git Bash is first started, you will start in what is called your home
+directory.  The home directory is indicated by the `~` symbol on the command
+line prompt.  If you want to see the full path for your home directory, enter
+the `pwd` command.  Note that a "folder" and "directory" are the same in this
+context and I will use the terms interchangeably.  
+
+#### Creating a directory / folder
+If you want to create a new folder within the current folder, you can use
+the command `mkdir`.  For example:  `mkdir class_repos`.  
+
+#### Listing directories/ folders and files
+To see the files and folders in the current folder, enter the `ls` command.
+
+#### Changing folders / directories
+To move into a subfolder within the current folder, use the `cd` command.  For
+example:  `cd class_repos`.
+
+If you want to move back to the parent directory, type `cd ..`.
+ 
