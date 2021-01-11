@@ -11,4 +11,4 @@ def output_python_version_info():
     
 
 if __name__ == "__main__":
-        output_python_version_info()
+    output_python_version_info()
