@@ -70,3 +70,16 @@ example:  `cd class_repos`.
 
 If you want to move back to the parent directory, type `cd ..`.
  
+# TkInter Check
+For the initial set-up at the beginning of the semester, this part can be
+ignored.  Later in the semester, when we will be working on graphical user
+interfaces, the `check_tkinter.py` file can be used to verify that you can
+run the `tkinter` package of Python.
+
+To check operation of `tkinter`:
+* Open a GitBash or terminal window
+* In the repository folder, enter the command `python check_tkinter.py`
+* The following window should display:  
+  ![tkinter_example_window.JPG](tkinter_example_window.JPG)
+* If so, simply click the "Click Here To Close" button and you are good to go.
+* If not, additional debugging will be needed.
