@@ -42,7 +42,7 @@ that is running.
 
 ## Directories
 #### Quick Start
-* Right after you open Git Bash, type `mkdir BME547_repos` to make a new folder
+* Right after you open your CLI, type `mkdir BME547_repos` to make a new folder
 for this class.
 * Move into this folder by typing `cd BME547_repos`
 
