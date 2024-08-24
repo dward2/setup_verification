@@ -34,6 +34,13 @@ command line.
 14. To run one of the newly installed packages, enter 
 `jupyter notebook jupyter_nb_check.ipynb`.  A Jupyter notebook should open
 in a browser window.  Follow the brief instructions in the Jupyter notebook.
+**NOTE**: If the notebook does not display, try using a different browser.  
+    You can either :
+    * shutdown the Jupyter notebook as in step 15 below, change the default 
+      browser for your system, and then restart the notebook as in step 14, or
+    * you can open a different browser, and then copy/paste the URL as 
+      shown in the CLI.  It will look something like 
+      `http://localhost:8000/tree?token-292...`.
 15. When finished, return to the CLI.  If you do not have access to a command
 prompt, you may need to type `ctrl-C` to cancel the Jupyter notebook server
 that is running.
