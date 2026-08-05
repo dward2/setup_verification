@@ -7,8 +7,10 @@ have successfully set-up their local git and Python.
 3. In the Clone pop-up box, make sure that SSH is underlined.
 4. Copy the URL from the pop-up box.  It should look something like:
 `git@github.com:dward2/setup_verification.git`.
-5. Open up a Git Bash, command window, or terminal window (will be called CLI,
-command line interface, in further instructions).
+5. Open up the appropriate Command Line Interface (CLI).  
+   * If running MacOS/Linux: a Terminal window.
+   * If running Windows and standard Python:  a Git Bash.
+   * If running Windows and Anaconda:  an Anaconda PowerShell window.
 6. Navigate, using the `cd` command, to a location where you would like to store
 your repositories for this course.  (If unfamiliar with using the `cd`
 command and making directories from the command line, please see the 
@@ -20,17 +22,21 @@ that directory by entering `cd setup_verification`.
 9.  Test your ability to run Python by entering `python check_python.py`.  A
 program should have run that printed out the Python version and said that you
 successfully ran Python.
-10.  Test your ability to set up a virtual environment by entering 
-`python -m venv myvenv`.  Next, enter `ls` to verify that a new folder called
-`myvenv` was created.  
+10.  Test your ability to set up a virtual environment.
+  * If you are using standard Python, enter `python -m venv myvenv` and then 
+ `ls` to verify that a new folder called `myvenv` was created.
+  * If you are using Anaconda, enter `conda create --name myvenv python` and then 
+    `conda info --envs` to verify that a new environment called `myvenv` was 
+    created.
 11. Activate the virtual environment by entering:  
-  + **MAC/Linux**:  `source myvenv/bin/activate`
-  + **Windows**: `source myvenv/Scripts/activate`  
-  
+  + **MAC/Linux Standard Python**:  `source myvenv/bin/activate`
+  + **Windows Standard Python**: `source myvenv/Scripts/activate`
+  + **Anaconda**:  `conda activate myvenv`
 12. Verify that the virtual environment activated by seeing `(myvenv)` in the
 command line.
-13.  Test your ability to add packages using `pip` by entering 
-`pip install -r requirements.txt`.
+13.  Test your ability to add packages. 
+  * Standard Python:  use `pip` by entering `pip install -r requirements.txt`.
+  * Anaconda:  use `conda` by entering `conda install --file requirements.txt`.
 14. To run one of the newly installed packages, enter 
 `jupyter notebook jupyter_nb_check.ipynb`.  A Jupyter notebook should open
 in a browser window.  Follow the brief instructions in the Jupyter notebook.
@@ -44,7 +50,8 @@ in a browser window.  Follow the brief instructions in the Jupyter notebook.
 15. When finished, return to the CLI.  If you do not have access to a command
 prompt, you may need to type `ctrl-C` to cancel the Jupyter notebook server
 that is running.
-16. Deactivate your virtual environment by entering `deactivate`.
+16. Deactivate your virtual environment by entering `deactivate` if using 
+  standard Python or `conda deactivate` if using Anaconda.
 
 
 ## Directories
@@ -56,7 +63,6 @@ for this class.
 For more details, keep reading.  Otherwise, go back to steps above.
 
 #### Home directory  
-
 
 When Git Bash is first started, you will start in what is called your home
 directory.  The home directory is indicated by the `~` symbol on the command
